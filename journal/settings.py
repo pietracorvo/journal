@@ -19,9 +19,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
+# TODO put in env (12factor app) or file
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-xx9#76lr_(r2h2y%=g)a_z2+zlq9yypi%63551mevz$50nh#lk'
 
+# TODO Switch off in real production
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -75,6 +77,7 @@ TEMPLATES = [
 WSGI_APPLICATION = 'journal.wsgi.application'
 
 
+# TODO Switch to MySQL
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
