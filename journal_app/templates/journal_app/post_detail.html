@@ -31,7 +31,7 @@
 	<hr>
 
 	<h2 class="subtitle">Add comment</h2>
-	<form method="post" action=".">
+	<form method="post">
 		{% csrf_token %}
 		{{ form.as_p }}
 		<div class="field">
