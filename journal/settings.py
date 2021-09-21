@@ -29,7 +29,9 @@ DEBUG = True
 
 # NOTE: allow user 'pietracorvo' at PythonAnywhere as host
 ALLOWED_HOSTS = [
+    # TODO Fix this ! 12factor-app !
     'pietracorvo.pythonanywhere.com',
+    '127.0.0.1'
 ]
 
 # NOTE: To show django-debug-toolbar
