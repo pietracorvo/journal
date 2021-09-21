@@ -9,9 +9,7 @@
 
 	<hr>
 
-	<!-- List of comments -->
 	<h2 class="subtitle">Comments</h2>
-
 	{% for comment in post.comments.all %}
 		<article class="media">
 			<div class="media-content">
@@ -32,7 +30,6 @@
 
 	<hr>
 
-	<!-- Add comment Form -->
 	<h2 class="subtitle">Add comment</h2>
 	<form method="post" action=".">
 		{% csrf_token %}

@@ -7,15 +7,13 @@
 
 from django.db import models
 
+
 class Post(models.Model):
     title = models.CharField(max_length=255)
     slug = models.SlugField(unique=True)
     intro = models.TextField()
     body = models.TextField()
     date_added = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return f'({self.pk}) {self.date_added} {self.title}'
 
     class Meta:
         ordering = ['-date_added']
